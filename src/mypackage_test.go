@@ -11,3 +11,12 @@ func TestGetInfo(t *testing.T) {
     }
     t.Logf("Everything as expected")
 }
+
+func TestFooTrue(t *testing.T) {
+    result := FooTrue()
+    if !result {
+        t.Fatalf("It is impossible, but returned bool is wrong!")
+    }
+    t.Logf("Everything as expected")
+}
+
